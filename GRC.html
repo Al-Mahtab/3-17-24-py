@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3200px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://images.pexels.com/photos/4022090/pexels-photo-4022090.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            color: blanchedalmond;
+            position: sticky;
+            top: 0px;
+            margin: 0px;
+            background-color: black;
+            height: 75px;
+        }
+
+        .left {
+            border-radius: 4px;
+            position: absolute;
+            border: 2px solid rgb(52 254 242);
+            display: inline-block;
+            left: 13px;
+            top: 24px;
+
+        }
+
+        .logo {
+            position: absolute;
+            display: inline-block;
+            top: 22px;
+            left: 49px;
+        }
+
+        .mid {
+            position: relative;
+            width: 340px;
+            top: 22px;
+            margin: auto;
+            display: block;
+            padding: 0px;
+            text-decoration: none;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 26px;
+            top: 23px;
+        }
+
+        .right:hover {
+            background-color: rgb(86, 249, 195);
+            border: 1px solid white;
+            padding: 5px;
+            transition: 200ms;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            background-color: rgb(183 70 70);
+        }
+
+
+
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 11px;
+            padding: 5px;
+        }
+
+        .logo img {
+            height: 45px;
+    width: 47px;
+    padding-top: 0px;
+    display: inline-block;
+    position: absolute;
+    right: -45px;
+    top: -18px;
+        }
+
+        .btn {
+            border-radius: 1px;
+            font-size: 8px;
+            padding: 4px;
+            margin: 2px;
+        }
+
+        .btn:hover {
+            cursor: -webkit-zoom-in;
+            transition: 100ms;
+        }
+
+        .navbar .left:hover {
+            background-color: rgb(107, 221, 221);
+            border: 3px solid rgb(255, 79, 35);
+            transition: 500ms;
+        }
+
+        .mid li {
+            padding: 5px;
+        }
+
+        .mid li:hover {
+            border: 2px solid rgb(66, 203, 201);
+            background-color: rgb(197, 50, 50);
+            transition: 250ms;
+
+        }
+
+        .navbar .right .bt {
+            padding-right: 6px;
+            margin: 3px;
+        }
+
+        .navbar .right .bt:hover {
+            border: 2px solid rgb(255, 77, 77);
+            cursor: pointer;
+            transform: 200ms;
+        }
+
+        .collegename {
+            display: inline-block;
+            border: 3px solid rgb(90, 211, 255);
+            background-color: rgb(29, 156, 70);
+            padding: 6px;
+            margin: 15px 25px;
+            text-align: center;
+
+        }
+
+        .collegenam {
+            padding: 6px;
+        }
+
+        .collegenam:hover {
+            padding: 12px;
+            transition: 300ms;
+        }
+
+        .collegename:hover {
+            border: 3px solid rgb(49, 158, 201);
+            background-color: rgb(27, 142, 63);
+            transition: 150ms;
+
+        }
+
+        div.box {
+            margin: 30px;
+            padding: 20px;
+            background-color: rgb(42, 42, 45);
+            border: 3px solid white;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        div.box:hover {
+            margin: 30px;
+            ;
+            padding: 30px;
+            ;
+            background-color: rgb(30, 30, 32);
+            border: 3px solid rgb(216, 255, 20);
+            border-radius: 12px;
+            transition: 100ms;
+        }
+
+        form.form {
+            margin: 2px;
+            padding: 6px;
+            border: 2px solid rgb(222, 76, 76);
+            width: 190px;
+            transition: 1s;
+        }
+
+        form.form:hover {
+            margin: 4px;
+            padding: 9px;
+            border: 2px solid rgb(16, 255, 227);
+            width: 190px;
+            transition: 500ms;
+        }
+
+        .btrs {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .btsb {
+
+            display: inline-block;
+            margin: 3px;
+            position: absolute;
+            left: 59px;
+
+        }
+
+        .btrs .btsb:hover {
+            border: 2.5px solid aqua;
+            transition: 1s;
+            cursor: grabbing;
+        }
+
+        .rs {
+            display: inline-block;
+            margin-left: 2px;
+            padding: 2px 10px;
+            position: absolute;
+            left: 260px;
+        }
+
+        .rs:hover {
+            border: 2.5px solid aqua;
+            transition: 1s;
+            transition-property: all;
+            cursor: pointer;
+        }
+
+        form:hover {
+            border: 2px double aqua;
+        }
+        div.logo p{
+            display: inline-block;
+            position: absolute;
+            left: 8px;
+    top: 6px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+
+        <div class="left"><button class="btn">:</button></div>
+
+        <div class="logo"> <img
+                src="https://images.pexels.com/photos/1671643/pexels-photo-1671643.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+                <p> Grc </p>
+                    
+                </div>
+
+        <div class="mid">
+            <ul>
+                <li class="list"><a href="">
+                        HOME
+                    </a></li>
+
+                <li class="list"><a href="">
+                        ABOUT
+                    </a></li>
+
+                <li class="list"><a href="">
+                        SERVICES
+                    </a></li>
+
+                <li class="list"><a href="">
+                        CONTACT
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="bt">Call</button>
+
+            <button class="bt">Email</button>
+        </div>
+
+    </header>
+    <div class="collegename">
+        College Name <form action="" class="collegenam"> <input type="text" placeholder="Enter your College Name">
+        </form>
+    </div>
+    <div class="box">
+
+        <form action="" class="form"><input type="text" placeholder="Enter your Name"></form>
+
+        <form action="" class="form"><input type="text" placeholder="Enter your Class"></form>
+
+        <form action="" class="form"><input type="text" placeholder="Enter your Roll "></form>
+
+        <form action="" class="form"><input type="text" placeholder="Enter your Section"></form>
+
+        <form action="" class="form">
+            <input type="text" placeholder="Enter your Passion ">
+        </form>
+
+        <div class="btrs">
+            <button class="btsb">Submit</button>
+            <input type="Reset" value="Reset Now" class="rs">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
