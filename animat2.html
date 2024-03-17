@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color: bisque;
+        display: flex;
+        padding: 4vw 0px;
+        margin: auto;
+        justify-content: center;
+        /* justify-items: center; */
+        height: 100px;
+        width: 80vw;
+        height: 30vh;
+
+    }
+
+    .container :nth-child(1) {
+        background-color: rgb(38, 240, 122);
+    }
+
+    .container :nth-child(2) {
+        background-color: aqua;
+        color: black;
+        font-style: italic;
+    }
+
+    @keyframes myani {
+        from {
+            width: 80px;
+        }
+
+        to {
+            width: 300px;
+        }
+    }
+
+    .box {
+        animation-name: myani;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+
+    .box:hover {
+        animation-direction: reverse;
+        animation-duration: 4s;
+    }
+
+    .box {
+        border: 2px double black;
+        height: 8vh;
+        width: 25vh;
+        padding: 20px 20px;
+        margin: 0px 20px;
+    }
+
+    @keyframes infinity {
+        from {
+            width: 100px;
+        }
+
+        to {
+            width: 500px;
+        }
+    }
+
+    .infinite {
+        color: red;
+        border: 3px double black;
+        width: 20vw;
+        height: 4vh;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+        animation-name: infinity;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-duration: 20ms;
+        background-color: rgb(232, 235, 88);
+    }
+
+    .infinite:hover {
+        background-color: #c70e64;
+        color: aqua;
+    }
+
+    div.margin {
+        margin: 50px 0px;
+    }
+
+    div.container2 {
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        margin: auto;
+        /* justify-content: center; */
+        color: #e5ff00;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 30px;
+        background-color: #5a4343;
+
+    }
+
+    div.box2 {
+        padding: 30px 10px;
+        margin: 30px 0px;
+        border: 2px dotted aqua;
+        height: 4vh;
+        animation-name: anim2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        position: relative;
+
+    }
+
+    @keyframes anim2 {
+        0% {
+            top: 0px;
+            left: 0px;
+            /* right: 0px; */
+        }
+
+        20% {
+            top: 0px;
+            left: 100px;
+            /* right: 0px; */
+        }
+
+        40% {
+            top: 0px;
+            left: 200px;
+            /* right: 100px; */
+            ;
+
+        }
+
+        60% {
+            top: 100px;
+            left: 300px;
+            /* right: 200px; */
+        }
+
+
+        80% {
+            top: 0px;
+            left: 100px;
+            /* right: 20px; */
+        }
+
+        95% {
+            top: 0px;
+            left: 50px;
+        }
+
+        100% {
+            top: 0px;
+            left: 5px;
+        }
+
+    }
+
+    /* @keyframes anim2{
+        from{
+            height: 100px;
+            width: 300px;
+        }
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <b>
+                This is THE 1stbox
+            </b>
+        </div>
+
+        <div class="box">
+            im italic (TOUCH ME)
+        </div>
+    </div>
+    <div class="infinite">
+        (I'm infinite) TOUCH ME
+    </div>
+    <div class="margin">
+        <div class="container2">
+            <div class="box2">
+                This is ME-TABIB-(LOTU)
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
